@@ -27,12 +27,13 @@
 			
 			
 				<div class="row">
-
-					<article id="photo1" class="col-md-2">
-
-						<img src="Photos/VVNATATION1.jpg" width="146" height="127">
-						
-					</article>
+					
+						<article id="photo1" class="col-md-2">
+							<a href="acceuil.html">
+								<img src="Photos/VVNATATION1.jpg" width="146" height="127">
+							</a>
+						</article>
+					
 
 					<article class="col-md-1">
 						
@@ -45,14 +46,19 @@
 							</p>
 					</article>
 
-					<article class="col-md-4">
+					<article class="col-md-2">
 						
 
 					</article>
 
-					<article class="col-md-1">
-						<button type="submit" class="btn btn-light" style="margin-top: 10px;">Connexion</button>
+					<article class="col-md-3">
+						
+						<a href="connexion.html">
+							<button type="submit" class="btn btn-success" style="margin-top: 10px;">Connexion</button>
+						</a>
+							
 					</article>
+					
 
 
 				</div>
@@ -61,19 +67,19 @@
 
 					<ul class="nav justify-content-center nav-pills">
   <li class="nav-item">
-    <a class="nav-link" href="file:///C:/Users/rabah/OneDrive/Bureau/Bootstraps/acceuil.html">Accueil</a>
+    <a class="nav-link" href="acceuil.html">Accueil</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="file:///C:/Users/rabah/OneDrive/Bureau/Bootstraps/Actualités.html">Actualités</a>
+    <a class="nav-link" href="Actualités.html">Actualités</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link active" href="file:///C:/Users/rabah/OneDrive/Bureau/Bootstraps/inscription.html">Inscription</a>
+    <a class="nav-link active" href="inscription.html">Inscription</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="file:///C:/Users/rabah/OneDrive/Bureau/Bootstraps/palmares.html">Palmarès</a>
+    <a class="nav-link" href="palmares.html">Palmarès</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="file:///C:/Users/rabah/OneDrive/Bureau/Bootstraps/galerie.html">Galerie</a>
+    <a class="nav-link" href="galerie.html">Galerie</a>
   </li>
 </ul>
 				</div>
@@ -128,7 +134,7 @@
 	  </div>
 
 	  <div class="form-group col-md-2">
-	    <label for="inputAddress2">Complément d'adresse</label>
+	    <label for="inputAddress2">Complément</label>
 	    <input type="text" class="form-control" id="inputAddress2">
 	  </div>
 	
@@ -143,7 +149,7 @@
     </div>
 
     <div class="form-group col-md-2">
-      <label for="inputNum">Numéro de téléphone</label>
+      <label for="inputNum">Numéro de tél</label>
       <input type="text" class="form-control" id="inputNum" placeholder="07 81 19 19 02">
     </div>
   </div>
@@ -165,9 +171,20 @@
 	  	<label class="form-check-label" for="inlineRadio3">Loisir</label>
 		</div>
 	</div>
-  
 
-  			<button type="submit" class="btn btn-primary">Submit</button>
+	<div class="form-check form-switch">
+  	<input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+  	<label class="form-check-label" for="flexSwitchCheckChecked">J'accepte les <a href="">conditions d'utilisation</a></label>
+  	<br>
+  	<small id="pwdHelp" class="form-text text-muted">Veuillez accepter les conditions d'utilisations pour pouvoir s'inscrire.</small>
+	</div> 
+
+	<div class="form-check form-switch">
+  	<input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+  	<label class="form-check-label" for="flexSwitchCheckChecked">J'accepte de m'abonner aux newsletters</label>
+	</div> 
+
+  			<button type="submit" class="btn btn-primary">S'inscrire</button>
 		</form>
 	</div>
 
@@ -175,39 +192,30 @@
 		<div class="container-fluid gradient-custom2">
 
 			<div class="row">
-			<article id="photo2" class="col-md-1">
+			<article id="photo2" class="col-md-3">
 				
 				<a href="https://www.auvergnerhonealpes.fr">
 						<img src="Photos/aura_logo.png" width="120" height="68">
 				</a>
 
-			</article>
-			<article id="photo3" class="col-md-1">
 				<a href="https://vaulx-en-velin.net/">
 						<img src="Photos/logo_ville.jpg" width="65" height="65">
 				</a>
+
 			</article>
-			<span class="col-md-7">
+		
+			<span class="col-md-6">
 				<ion-icon name="heart"></ion-icon>
 
 			</span> 
 
 			<div class="col-md-3">
-				<span> Nous rejoindre </span>
 				
 				<a href="https://www.facebook.com/vvnatation/">
-					<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+					<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
   <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
 </svg>
 </a>
-
-
-<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
-  <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
-</svg>
-
-					
-
 
 				
 			</div>
