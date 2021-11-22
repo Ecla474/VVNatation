@@ -2,45 +2,70 @@
 <html>
 <head>
 	<meta charset="utf-8">
+
 	<title>VVNatation - Accueil </title>
 
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/style.css">
 
-	 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-
 </head>
+
 <body>
 	<header>
 		<div class="container-fluid gradient-custom">
-			
+
 				<div class="row2">
 
-					<ul class="nav justify-content-center nav-pills">
+					<ul class="nav justify-content-center nav-pills" style="margin-left: 240px;">
+
 					  <li class="nav-item">
-					    <a class="nav-link active" href="acceuil.html">Accueil</a>
+
+					    <a class="nav-link active" href="acceuil.html"><b>Accueil</b></a>
+					    <ul class="sous" style="padding-left: 0px;">
+					    	<li><a href="#">Decouvrir</a></li>
+					    	<li><a href="#">Approfondir</a></li>
+					    </ul>
+
 					  </li>
+
 					  <li class="nav-item">
+
 					    <a class="nav-link" href="Actualités.html">Actualités</a>
+					    <ul class="sous" style="padding-left: 0px; margin-right: -10px; padding-bottom: 10px; padding-top: 10px;">
+					    	<li><a href="#">Article 1</a></li>
+					    	<li><a href="#">Article 2</a></li>
+					    	<li><a href="#">Article 3</a></li>
+					    </ul>
+
 					  </li>
+
 					  <li class="nav-item">
 					    <a class="nav-link" href="inscription.html">Inscription</a>
 					  </li>
+
 					  <li class="nav-item">
 					    <a class="nav-link" href="palmares.html">Palmarès</a>
 					  </li>
+
 					  <li class="nav-item">
 					    <a class="nav-link" href="galerie.html">Galerie</a>
 					  </li>
+
+					  <li class="nav-item">
+					  	<a class="nav-link" href="#">Contact</a>
+					  	<ul class="sous" style="padding-left: 0px;">
+					  		<li><a href="https://www.facebook.com/vvnatation/">Facebook</a></li>
+						</li>
+
 					</ul>
 				</div>
-			
+
+
+
 				<div class="row">
 
 					<article id="photo1" class="col-md-2">
@@ -48,38 +73,34 @@
 						<a href="acceuil.html">
 							<img src="Photos/VVNATATION1.jpg" width="146" height="127">
 						</a>
-						
+
 					</article>
 
 					<article class="col-md-1">
-						
+
 					</article>
 
 					<article class="col-md-4">
-						<h1> Bienvenue </h1>
-							<p>
-								Bienvenue dans l'association de Natation de Vaulx-en-Velin.
-							</p>
+
 					</article>
 
 					<article class="col-md-2">
-						
 
 					</article>
 
 					<article class="col-md-3">
+
 						<a href="inscription.html">
 							<button type="submit" class="btn btn-primary" style="margin-top: 10px;">Inscription</button>
 						</a>
+
 						<a href="connexion.html">
 							<button type="submit" class="btn btn-success" style="margin-top: 10px;">Connexion</button>
 						</a>
-							
+
 					</article>
 
 				</div>
-
-				
 			</div>
 	</header>
 
@@ -87,48 +108,41 @@
 
 		<div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-bs-ride="carousel" data-interval="10000">
 
-<div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
-  </div>
+			<ol class="carousel-indicators">
+		    <li type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></li>
+		    <li type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="1" aria-label="Slide 2"></li>
+		    <li type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="2" aria-label="Slide 3"></li>
+		  </ol>
 
 
   		<div class="carousel-inner">
 
     		<div class="carousel-item active">
-
-      		<img src="Photos/photo_carrousel1.jpg" class="d-block w-75">
-
-      		<div class="carousel-caption d-none d-md-block">
-        		<h5>First slide label</h5>
-        		<p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+      		<img src="Photos/photo1.jpg" width="100%" height="700px">
+      		<div class="carousel-caption d-none d-md-block" style="text-align: right;">
+        		<h5><b>First slide label</b></h5>
+        		<p>Adherez-vous pour voir des vidéos excusives !</p>
+        		<a href="inscription.html"><button type="submit" class="btn btn-primary" style="margin-top: 10px;">Inscrivez-vous</button></a>
       		</div>
     		</div>
 
-    		<div class="carousel-item">
-      		<img src="Photos/photo_carrousel2.jpg" class="d-block w-75">
-      		<div class="carousel-caption d-none d-md-block">
-        		<h5>Second slide label</h5>
-        		<p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-      		</div>
-
-    		</div>
 
     		<div class="carousel-item">
-      		<img src="Photos/photo_carrousel3.jpg" class="d-block w-75">
-      		<div class="carousel-caption d-none d-md-block">
-        		<h5>Thith slide label</h5>
-        		<p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+      		<img src="Photos/photo2.jpg" width="100%" height="700px">
+      		<div class="carousel-caption d-none d-md-block" style="text-align: right;">
+        		<h5><b>Second slide label</b></h5>
+        		<p>Soyez toujours informé sur la vie du club</p>
+        		<a href="Actualités.html"><button type="submit" class="btn btn-primary" style="margin-top: 10px;">Afficher l'actualité</button></a>
       		</div>
     		</div>
 
+
     		<div class="carousel-item">
-      		<img src="Photos/photo_carrousel4.jpg" class="d-block w-75">
-      		<div class="carousel-caption d-none d-md-block">
-        		<h5>Fouth slide label</h5>
+      		<img src="Photos/photo3.jpg" width="100%" height="700px">
+      		<div class="carousel-caption d-none d-md-block" style="text-align: right;">
+        		<h5 style="color: black;"><b>Third slide label</b></h5>
         		<p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+        		<a href="galerie.html"><button type="submit" class="btn btn-primary" style="margin-top: 10px;">Voir la galerie</button></a>
       		</div>
     		</div>
 
@@ -143,62 +157,92 @@
      		<span class="carousel-control-next-icon" aria-hidden="true"></span>
      		<span class="sr-only">Next</span>
      	</a>
- 
-</div>
-
-<div class="corps2">
-
-	<img src="Photos/photo_carrousel3.jpg" width=150 height=100>
-	<img src="Photos/photo_carrousel3.jpg" width=150 height=100>
-	
-
-
-
 
 </div>
 
 
-		
-	</div>
-	
+
+	<div class="row g-4 py-5 row-cols-1 row-cols-lg-3" style="margin-left: 275px;
+    margin-right: 275px;">
+      <div class="feature col">
+        
+        <h2>Featured title</h2>
+        <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+        <a href="#" class="icon-link">
+          En savoir plus...
+          <svg class="bi" width="1em" height="1em"><use xlink:href="#chevron-right"/></svg>
+        </a>
+      </div>
+      <div class="feature col">
+        
+        <h2>Featured title</h2>
+        <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+        <a href="#" class="icon-link">
+          En savoir plus...
+          <svg class="bi" width="1em" height="1em"><use xlink:href="#chevron-right"/></svg>
+        </a>
+      </div>
+      <div class="feature col" style="margin-top: 24px;">
+        
+        <h2>Evenements à venir</h2>
+        <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+    <div class="d-flex gap-2 w-100 justify-content-between">
+      <div>
+        <h6 class="mb-0">List group item heading</h6>
+        <p class="mb-0 opacity-75">Some placeholder content in a paragraph.</p>
+      </div>
+      <small class="opacity-50 text-nowrap">8 oct</small>
+    </div>
+  </a>
+  <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+    <div class="d-flex gap-2 w-100 justify-content-between">
+      <div>
+        <h6 class="mb-0">Another title here</h6>
+        <p class="mb-0 opacity-75">Some placeholder content in a paragraph that goes a little longer so it wraps to a new line.</p>
+      </div>
+      <small class="opacity-50 text-nowrap">25 nov</small>
+    </div>
+  </a>
+  <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+    <div class="d-flex gap-2 w-100 justify-content-between">
+      <div>
+        <h6 class="mb-0">Third heading</h6>
+        <p class="mb-0 opacity-75">Some placeholder content in a paragraph.</p>
+      </div>
+      <small class="opacity-50 text-nowrap">20 dec</small>
+    </div>
+  </a>
+      </div>
+    </div>
+
 	<footer>
 		<div class="container-fluid gradient-custom2">
 
-			<div class="row">
-			<article id="photo2" class="col-md-3">
-				
+			<div class="rowFooter">
+
+				<h2> Nos partenaires </h2>
+			
+
 				<a href="https://www.auvergnerhonealpes.fr">
-						<img src="Photos/aura_logo.png" width="120" height="68">
+						<img src="Photos/aura_logo.png" width="170" height="90">
 				</a>
 
 				<a href="https://vaulx-en-velin.net/">
-						<img src="Photos/logo_ville.jpg" width="65" height="65">
+						<img src="Photos/logo_ville.jpg" width="85" height="85">
 				</a>
 
-			</article>
 		
-			<span class="col-md-6">
+
+			
 				<ion-icon name="heart"></ion-icon>
 
-			</span> 
-
-			<div class="col-md-3">
-				
-				<a href="https://www.facebook.com/vvnatation/">
-					<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
-  <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
-</svg>
-</a>
-
-				
-			</div>
 
 
 		</div>
-			
+
 		</div>
 	</footer>
-	
+
 	<script>
 		$('.carousel').carousel({
 
@@ -207,4 +251,4 @@
 		})
 	</script>
 </body>
-</html> 
+</html>
